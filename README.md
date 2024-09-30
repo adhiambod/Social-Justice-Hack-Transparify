@@ -50,7 +50,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/username/transparify.git
+git clone https://github.com/adhiambod/Social-Justice-Hack-Transparify.git
 Create Virtual Environment:
 
 bash
