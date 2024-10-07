@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+header {
+    background-color: #006d77; /* Change to new primary color */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px; /* Logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #005f6b; /* Darker shade for hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #a7c957; /* New hero background */
+    color: #fff;
+    padding: 50px 20px; /* Padding for hero section */
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #005f6b; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003f43; /* Darker shade on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Contact Us Styles */
+.contact {
+    background-color: #fff; /* White background for contact section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for contact section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact h1 {
+    color: #006d77; /* Primary color for headings */
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #333; /* Dark color for subheading */
+}
+
+.logo img {
+    max-width: 200px; /* Logo size for contact page */
+    margin: 0 auto; /* Center the logo */
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for input fields */
+}
+
+button {
+    background-color: #006d77; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px;
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer;
+    font-size: 16px; /* Font size for button */
+}
+
+button:hover {
+    background-color: #005f6b; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+/* Loading Page Styles */
+.loading-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #fff; 
+}
+
+.loading-image {
+    max-width: 80%; 
+    height: auto; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        display: none;
+        text-align: center;
+        background-color: #333;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px; 
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    #menu-toggle:checked + label + ul {
+        display: block;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
