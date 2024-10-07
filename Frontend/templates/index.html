@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Transparify{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <h1>Welcome to Transparify</h1>
+        <p>Promoting transparency and accountability in governance through citizen engagement.</p>
+        <a href="{% url 'about_us' %}" class="cta-button">Learn More</a>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>To empower citizens with information that promotes accountability, transparency, and responsible governance.</p>
+    </section>
+
+    <section class="engage">
+        <h2>Get Involved</h2>
+        <p>Join us in our efforts to ensure a more transparent and accountable world. <a href="{% url 'about_us' %}">Learn more</a>.</p>
+    </section>
+{% endblock %}
